@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Ramyanaidu.GitHub.io : ">
+    <script src="javascripts/main.js"></script>
+    <title>Tictactoe</title>
+	<style>
+		pre {
+			white-space: pre;
+			margin: 1em -10em;
+		} 
+</style>
+
+  </head>
+
+  <body>
+    <h2>About</h2>
+    <hr>
+		<p>
+			This is a unique solution to collect feedback, preference of a user specifically targeted to food chains. Users select choices appropriate to their taste and preference and the choice is depicted via a game.
+		</p>
+    <h2>How does it work?</h2>
+    <hr>
+		<p>
+			The idea of this project is to make the process of giving feedback interesting.<br>
+			<br>
+			<ul>
+				<li>Users login into their profile and answer a simple question and play a game.</li><br>
+				<li>Users can keep track of their progress or level in the games, Unlock achievements, play PvP.</li><br>
+				<li>Food chains can give discount coupons for achievements to keep user interested.</li>
+			</ul>
+			Primary goal is to collect user preference data to help the food chains improve their service. User specific data like location, age range, ethnicity can also be collected.<br>
+			<h3>Going forward..</h3>
+			The collection of data can be improved.<br>
+			<ul>
+				<li>Recommendations of games for user based on past history.</li>
+				<li>Further comments and discussions in a PvP can capture more feedback data.</li>
+				<li>User can choose category based on specific food commodity or based on a game.</li>
+			</ul>
+			
+			Games can also be outsourced to some gaming company.
+		</p>
+    <h2>Try It!</h2>
+    <hr>
+    <p>
+      <center>
+        <form name=game>
+          <table border=0>
+            <td>
+              <table border=0>
+                <tr>
+                  <td>
+                    <table style="width: 100%;">
+                      <tr align="center">
+                        <td id="c1"><a href="javascript:preference('X')"><img src="images/ccd.png" border=0 height=50 width=50 name=X alt="Top-Left"></a></td>
+                        <td id="c2"><a href="javascript:preference('Y')"><img src="images/starbucks.png" border=0 height=50 width=50 name=Y alt="Top-Center"></a></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 100%;height: 100%"><p>Which Coffee shop has a better tasting Cappuccino?</p></td>
+                </tr>
+                <tr align ="center">
+                  <td><p id="choice"></p></td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table border=1>
+                <tr>
+                  <td><a href="javascript:yourChoice('A')"><img src="images/blank.png" border=0 height=100 width=100 name=A alt="Top-Left"></a></td>
+                  <td><a href="javascript:yourChoice('B')"><img src="images/blank.png" border=0 height=100 width=100 name=B alt="Top-Center"></a></td>
+                  <td><a href="javascript:yourChoice('C')"><img src="images/blank.png" border=0 height=100 width=100 name=C alt="Top-Right"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript:yourChoice('D')"><img src="images/blank.png" border=0 height=100 width=100 name=D alt="Middle-Left"></a></td>
+                  <td><a href="javascript:yourChoice('E')"><img src="images/blank.png" border=0 height=100 width=100 name=E alt="Middle-Center"></a></td>
+                  <td><a href="javascript:yourChoice('F')"><img src="images/blank.png" border=0 height=100 width=100 name=F alt="Middle-Right"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript:yourChoice('G')"><img src="images/blank.png" border=0 height=100 width=100 name=G alt="Bottom-Left"></a></td>
+                  <td><a href="javascript:yourChoice('H')"><img src="images/blank.png" border=0 height=100 width=100 name=H alt="Bottom-Center"></a></td>
+                  <td><a href="javascript:yourChoice('I')"><img src="images/blank.png" border=0 height=100 width=100  name=I alt="Bottom-Right"></a></td>
+                </tr>
+              </table>
+            </td>
+            <!--<td>
+              <table>
+                <tr><td><input type=text size=5 name=you></td><td>You</td></tr>
+                <tr><td><input type=text size=5 name=computer></td><td>Computer</td></tr>
+                <tr><td><input type=text size=5 name=ties></td><td>Ties</td></tr>
+              </table>
+            </td>-->
+          </table>
+        </form>
+      </center>
+		<center>
+	      <input type=button value="Re-try" onClick="playAgain();">
+          &nbsp;&nbsp;
+		  <input type=button value="Next Game >>">
+		</center>
+    </p>
+    <h2>Results</h2>
+    <hr>
+    <p>
+		<table>
+			<tr align="left">
+				<td><h4>Cappuccino choice</h4></td>
+				<td><h4>Location specific preference</h4></td>
+			</tr>
+			<tr align="center">
+				<td><img src="images/pie1.png"  height=500 width=750></td>
+				<td><img src="images/pie2.png"  height=500 width=750></td>
+			</tr>
+		</table>
+	</p>
+  </body>
+</html>
