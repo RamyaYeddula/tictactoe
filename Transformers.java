@@ -10,7 +10,7 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-
+//this cass represents how xslt transformation is done
 public class Transformers {
 
 	public static void main(String[] args) throws IOException, URISyntaxException, TransformerException {
